@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ElexaCart | Electronics Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-row">
+        <a class="brand" href="#">ElexaCart</a>
+
+        <div class="search-wrap" role="search">
+          <input type="search" placeholder="Search phones, laptops, accessories..." />
+          <button>Search</button>
+        </div>
+
+        <div class="nav-actions">
+          <button>Sign in</button>
+          <button>Cart (2)</button>
+        </div>
+      </div>
+
+      <nav class="category-nav container">
+        <a href="#products">Phones</a>
+        <a href="#products">Laptops</a>
+        <a href="#products">Headphones</a>
+        <a href="#products">Gaming</a>
+        <a href="#products">Accessories</a>
+        <a href="#products">Smart Home</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container" data-hero>
+        <div class="hero-bg" aria-hidden="true"></div>
+        <article class="hero-main">
+          <p class="badge">Trending this week</p>
+          <h1>Minimal electronics store with premium feel.</h1>
+          <p>
+            Clean cards, real product photos, responsive layout, and a cursor-reactive hero section
+            with smooth 3D depth.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#products">Shop now</a>
+            <a class="btn ghost" href="#products">Browse categories</a>
+          </div>
+        </article>
+
+        <aside class="hero-side">
+          <p>Deal of the day</p>
+          <h3>NeoBook Air 13</h3>
+          <p>13.6" display · 16GB RAM · 512GB SSD</p>
+          <strong>$999</strong>
+        </aside>
+      </section>
+
+      <section class="container" id="products">
+        <div class="section-head">
+          <h2>Featured products</h2>
+          <p>Minimal cards with subtle 3D hover effect.</p>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card" data-card>
+            <img
+              src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80"
+              alt="Modern smartphone on dark background"
+            />
+            <div class="product-info">
+              <h3>NeoPhone X5</h3>
+              <p>256GB · 120Hz AMOLED</p>
+              <div class="meta"><span>$899</span><button>Add</button></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-card>
+            <img
+              src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=80"
+              alt="Slim silver laptop on desk"
+            />
+            <div class="product-info">
+              <h3>NeoBook Pro 14</h3>
+              <p>14" Retina · i7 · 1TB SSD</p>
+              <div class="meta"><span>$1,249</span><button>Add</button></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-card>
+            <img
+              src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=80"
+              alt="Over-ear wireless headphones"
+            />
+            <div class="product-info">
+              <h3>AeroSound Max</h3>
+              <p>ANC · 40h battery</p>
+              <div class="meta"><span>$199</span><button>Add</button></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-card>
+            <img
+              src="https://images.unsplash.com/photo-1486401899868-0e435ed85128?auto=format&fit=crop&w=900&q=80"
+              alt="Gaming setup with controller"
+            />
+            <div class="product-info">
+              <h3>CorePlay Console</h3>
+              <p>1TB storage · 4K gaming</p>
+              <div class="meta"><span>$499</span><button>Add</button></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-card>
+            <img
+              src="https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=900&q=80"
+              alt="Wireless earbuds in case"
+            />
+            <div class="product-info">
+              <h3>Pulse Buds Lite</h3>
+              <p>Low latency · 30h case</p>
+              <div class="meta"><span>$89</span><button>Add</button></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-card>
+            <img
+              src="https://images.unsplash.com/photo-1580894908361-967195033215?auto=format&fit=crop&w=900&q=80"
+              alt="Smart watch on wooden table"
+            />
+            <div class="product-info">
+              <h3>Zen Watch S2</h3>
+              <p>AMOLED · GPS · health tracking</p>
+              <div class="meta"><span>$229</span><button>Add</button></div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© 2026 ElexaCart</p>
+        <a href="#">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
