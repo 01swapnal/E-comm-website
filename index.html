@@ -14,152 +14,140 @@
   </head>
   <body>
     <header class="site-header">
-      <nav class="nav container">
-        <a class="brand" href="#">NovaCart</a>
-        <ul class="nav-links">
-          <li><a href="#featured">Featured</a></li>
-          <li><a href="#categories">Categories</a></li>
-          <li><a href="#deals">Deals</a></li>
-          <li><a href="#newsletter">Newsletter</a></li>
-        </ul>
-        <button class="menu-btn" aria-label="Open mobile menu">☰</button>
+      <div class="container nav-row">
+        <a class="brand" href="#">ElexaCart</a>
+
+        <div class="search-wrap" role="search">
+          <input type="search" placeholder="Search phones, laptops, accessories..." />
+          <button>Search</button>
+        </div>
+
+        <div class="nav-actions">
+          <button>Sign in</button>
+          <button>Cart (2)</button>
+        </div>
+      </div>
+
+      <nav class="category-nav container">
+        <a href="#products">Phones</a>
+        <a href="#products">Laptops</a>
+        <a href="#products">Headphones</a>
+        <a href="#products">Gaming</a>
+        <a href="#products">Accessories</a>
+        <a href="#products">Smart Home</a>
       </nav>
     </header>
 
     <main>
-      <section class="hero container" id="home">
-        <div class="hero-copy">
-          <p class="kicker">Fresh drop · Spring collection</p>
-          <h1>Simple shopping with bold product experiences.</h1>
+      <section class="hero container" data-hero>
+        <div class="hero-bg" aria-hidden="true"></div>
+        <article class="hero-main">
+          <p class="badge">Trending this week</p>
+          <h1>Minimal electronics store with premium feel.</h1>
           <p>
-            Built for your web dev project: responsive layout, clean visual hierarchy,
-            and rich 3D hover interactions that feel handcrafted.
+            Clean cards, real product photos, responsive layout, and a cursor-reactive hero section
+            with smooth 3D depth.
           </p>
           <div class="hero-actions">
-            <a class="btn primary" href="#featured">Shop now</a>
-            <a class="btn ghost" href="#categories">Browse categories</a>
+            <a class="btn primary" href="#products">Shop now</a>
+            <a class="btn ghost" href="#products">Browse categories</a>
           </div>
-        </div>
-        <div class="hero-panel">
-          <article class="promo-card">
-            <p class="promo-badge">Up to 40% off</p>
-            <h2>Weekend deal</h2>
-            <p>Grab premium essentials before stock runs out.</p>
-            <a href="#deals">Explore offers →</a>
-          </article>
-        </div>
+        </article>
+
+        <aside class="hero-side">
+          <p>Deal of the day</p>
+          <h3>NeoBook Air 13</h3>
+          <p>13.6" display · 16GB RAM · 512GB SSD</p>
+          <strong>$999</strong>
+        </aside>
       </section>
 
-      <section class="container" id="categories">
-        <div class="section-head">
-          <h2>Shop by category</h2>
-          <p>Minimal, everyday picks curated for modern shoppers.</p>
-        </div>
-        <div class="chips">
-          <button>Apparel</button>
-          <button>Accessories</button>
-          <button>Home Tech</button>
-          <button>Wellness</button>
-          <button>Footwear</button>
-        </div>
-      </section>
-
-      <section class="container" id="featured">
+      <section class="container" id="products">
         <div class="section-head">
           <h2>Featured products</h2>
-          <p>Hover on cards to see the 3D animation effect.</p>
+          <p>Minimal cards with subtle 3D hover effect.</p>
         </div>
 
         <div class="product-grid">
           <article class="product-card" data-card>
-            <div class="product-media gradient-1">
-              <span class="price-tag">$79</span>
-            </div>
+            <img
+              src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80"
+              alt="Modern smartphone on dark background"
+            />
             <div class="product-info">
-              <h3>Urban Runner Sneakers</h3>
-              <p>Breathable knit upper with cloud-cushion sole.</p>
-              <button>Add to cart</button>
+              <h3>NeoPhone X5</h3>
+              <p>256GB · 120Hz AMOLED</p>
+              <div class="meta"><span>$899</span><button>Add</button></div>
             </div>
           </article>
 
           <article class="product-card" data-card>
-            <div class="product-media gradient-2">
-              <span class="price-tag">$49</span>
-            </div>
+            <img
+              src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=80"
+              alt="Slim silver laptop on desk"
+            />
             <div class="product-info">
-              <h3>Classic Leather Sling</h3>
-              <p>Structured silhouette with premium matte finish.</p>
-              <button>Add to cart</button>
+              <h3>NeoBook Pro 14</h3>
+              <p>14" Retina · i7 · 1TB SSD</p>
+              <div class="meta"><span>$1,249</span><button>Add</button></div>
             </div>
           </article>
 
           <article class="product-card" data-card>
-            <div class="product-media gradient-3">
-              <span class="price-tag">$119</span>
-            </div>
+            <img
+              src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=80"
+              alt="Over-ear wireless headphones"
+            />
             <div class="product-info">
-              <h3>Smart Desk Lamp</h3>
-              <p>Adaptive lighting modes and touch controls.</p>
-              <button>Add to cart</button>
+              <h3>AeroSound Max</h3>
+              <p>ANC · 40h battery</p>
+              <div class="meta"><span>$199</span><button>Add</button></div>
             </div>
           </article>
 
           <article class="product-card" data-card>
-            <div class="product-media gradient-4">
-              <span class="price-tag">$29</span>
-            </div>
+            <img
+              src="https://images.unsplash.com/photo-1486401899868-0e435ed85128?auto=format&fit=crop&w=900&q=80"
+              alt="Gaming setup with controller"
+            />
             <div class="product-info">
-              <h3>Minimal Steel Bottle</h3>
-              <p>Insulated wall keeps drinks cold for 18 hours.</p>
-              <button>Add to cart</button>
+              <h3>CorePlay Console</h3>
+              <p>1TB storage · 4K gaming</p>
+              <div class="meta"><span>$499</span><button>Add</button></div>
             </div>
           </article>
 
           <article class="product-card" data-card>
-            <div class="product-media gradient-5">
-              <span class="price-tag">$89</span>
-            </div>
+            <img
+              src="https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=900&q=80"
+              alt="Wireless earbuds in case"
+            />
             <div class="product-info">
-              <h3>Noise-Lite Earbuds</h3>
-              <p>Balanced sound profile with low-latency mode.</p>
-              <button>Add to cart</button>
+              <h3>Pulse Buds Lite</h3>
+              <p>Low latency · 30h case</p>
+              <div class="meta"><span>$89</span><button>Add</button></div>
             </div>
           </article>
 
           <article class="product-card" data-card>
-            <div class="product-media gradient-6">
-              <span class="price-tag">$64</span>
-            </div>
+            <img
+              src="https://images.unsplash.com/photo-1580894908361-967195033215?auto=format&fit=crop&w=900&q=80"
+              alt="Smart watch on wooden table"
+            />
             <div class="product-info">
-              <h3>Soft Lounge Hoodie</h3>
-              <p>Relaxed fit, brushed interior, all-day comfort.</p>
-              <button>Add to cart</button>
+              <h3>Zen Watch S2</h3>
+              <p>AMOLED · GPS · health tracking</p>
+              <div class="meta"><span>$229</span><button>Add</button></div>
             </div>
           </article>
         </div>
-      </section>
-
-      <section class="container deals" id="deals">
-        <h2>Flash deals</h2>
-        <p>Limited slots open · Ends in 04:32:19</p>
-        <a href="#featured" class="btn primary">Claim deals</a>
-      </section>
-
-      <section class="container newsletter" id="newsletter">
-        <h2>Get member-only offers</h2>
-        <p>Subscribe for first access to drops and discounts.</p>
-        <form>
-          <label for="email" class="sr-only">Email address</label>
-          <input id="email" type="email" placeholder="Enter your email" required />
-          <button type="submit">Subscribe</button>
-        </form>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-wrap">
-        <p>© 2026 NovaCart. Made for your web dev project.</p>
-        <a href="#home">Back to top ↑</a>
+        <p>© 2026 ElexaCart</p>
+        <a href="#">Back to top ↑</a>
       </div>
     </footer>
 
