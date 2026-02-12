@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ElexaCart | Electronics Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="top-strip">
+      <div class="container strip-inner">
+        <p>Free shipping over $99 · 24/7 support</p>
+        <p>Deals end in 03:18:24</p>
+      </div>
+    </header>
+
+    <header class="site-header">
+      <div class="container nav-row">
+        <a class="brand" href="#">ElexaCart</a>
+        <div class="search-wrap">
+          <input type="search" placeholder="Search products, brands and categories" />
+          <button>Search</button>
+        </div>
+        <div class="nav-actions">
+          <button>Account</button>
+          <button>Wishlist</button>
+          <button class="cart-btn">Cart (2)</button>
+        </div>
+      </div>
+      <nav class="category-nav container">
+        <a href="#">Laptops</a>
+        <a href="#">Mobiles</a>
+        <a href="#">Gaming</a>
+        <a href="#">TV & Audio</a>
+        <a href="#">Accessories</a>
+        <a href="#">Smart Home</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <article class="hero-main panel">
+          <p class="badge">Mega electronics sale</p>
+          <h1>Upgrade your setup with flagship gadgets.</h1>
+          <p>Save up to 45% on top brands with premium quality and quick delivery.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#products">Shop now</a>
+            <a class="btn ghost" href="#offers">View offers</a>
+          </div>
+        </article>
+
+        <article class="hero-side panel">
+          <h3>Top pick today</h3>
+          <p class="deal-name">PulseBook Pro 14</p>
+          <p>i7 • 16GB RAM • 1TB SSD • OLED</p>
+          <strong>$1,199</strong>
+          <a href="#products">Grab deal →</a>
+        </article>
+      </section>
+
+      <section class="container" id="offers">
+        <div class="offers-grid">
+          <article class="offer-card">
+            <p>Bluetooth Audio</p>
+            <h3>Wireless headphones from $59</h3>
+          </article>
+          <article class="offer-card">
+            <p>Home office</p>
+            <h3>Monitors and desks up to 30% off</h3>
+          </article>
+          <article class="offer-card">
+            <p>Gaming week</p>
+            <h3>Consoles and gear, limited stock</h3>
+          </article>
+        </div>
+      </section>
+
+      <section class="container" id="products">
+        <div class="section-head">
+          <h2>Trending products</h2>
+          <p>Modern cards with smooth 3D hover interaction.</p>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card" data-card>
+            <div class="product-media media-1"></div>
+            <div class="product-info">
+              <h3>NeoPhone X5</h3>
+              <p>120Hz AMOLED · 256GB · 50MP triple camera</p>
+              <div class="meta"><span>$899</span><button>Add</button></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-card>
+            <div class="product-media media-2"></div>
+            <div class="product-info">
+              <h3>UltraView 32" 4K</h3>
+              <p>IPS panel · HDR400 · USB-C power delivery</p>
+              <div class="meta"><span>$449</span><button>Add</button></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-card>
+            <div class="product-media media-3"></div>
+            <div class="product-info">
+              <h3>AeroBuds Lite</h3>
+              <p>ANC · Spatial audio · 36-hour battery backup</p>
+              <div class="meta"><span>$129</span><button>Add</button></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-card>
+            <div class="product-media media-4"></div>
+            <div class="product-info">
+              <h3>CoreStation Play</h3>
+              <p>1TB NVMe · Ray tracing · 4K performance mode</p>
+              <div class="meta"><span>$499</span><button>Add</button></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-card>
+            <div class="product-media media-5"></div>
+            <div class="product-info">
+              <h3>SmartCam Home 2</h3>
+              <p>2K video · AI detection · Night vision</p>
+              <div class="meta"><span>$89</span><button>Add</button></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-card>
+            <div class="product-media media-6"></div>
+            <div class="product-info">
+              <h3>VoltCharge 100W</h3>
+              <p>GaN fast charger · 3 ports · travel compact</p>
+              <div class="meta"><span>$39</span><button>Add</button></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="container newsletter">
+        <h2>Get exclusive launch deals</h2>
+        <form>
+          <input type="email" placeholder="Your email address" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© 2026 ElexaCart. Electronics store front-end project.</p>
+        <a href="#">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

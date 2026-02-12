@@ -1,0 +1,377 @@
+:root {
+  --bg: #f4f7ff;
+  --surface: #ffffff;
+  --text: #151c2f;
+  --muted: #69728a;
+  --line: rgba(48, 63, 104, 0.14);
+  --primary: #195bff;
+  --primary-2: #0e41c4;
+  --radius: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  width: min(1180px, 94vw);
+  margin: 0 auto;
+}
+
+.top-strip {
+  background: #0f172e;
+  color: #c8d2f2;
+  font-size: 0.85rem;
+}
+
+.strip-inner {
+  min-height: 38px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.strip-inner p {
+  margin: 0;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: rgba(244, 247, 255, 0.96);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(8px);
+}
+
+.nav-row {
+  display: grid;
+  grid-template-columns: 180px 1fr auto;
+  gap: 1rem;
+  align-items: center;
+  min-height: 76px;
+}
+
+.brand {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 800;
+  font-size: 1.35rem;
+}
+
+.search-wrap {
+  display: flex;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.search-wrap input {
+  width: 100%;
+  border: 0;
+  padding: 0.75rem 0.8rem;
+}
+
+.search-wrap button,
+.nav-actions button,
+.btn,
+.meta button,
+.newsletter button {
+  border: 0;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.search-wrap button {
+  background: #e8efff;
+  color: #21315d;
+  padding: 0.75rem 1rem;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-actions button {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.58rem 0.75rem;
+}
+
+.cart-btn {
+  background: var(--primary) !important;
+  border: none !important;
+  color: #fff;
+}
+
+.category-nav {
+  display: flex;
+  gap: 1.1rem;
+  overflow-x: auto;
+  padding: 0.75rem 0 0.95rem;
+}
+
+.category-nav a {
+  text-decoration: none;
+  color: #2d3960;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.35fr 0.65fr;
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.panel {
+  border-radius: var(--radius);
+  padding: 1.8rem;
+  box-shadow: 0 12px 30px rgba(12, 25, 68, 0.11);
+}
+
+.hero-main {
+  background: radial-gradient(circle at 15% 20%, #edf2ff, #d8e5ff 75%);
+}
+
+.badge {
+  display: inline-block;
+  margin: 0;
+  background: #dae6ff;
+  color: #15388f;
+  font-size: 0.83rem;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 0.28rem 0.65rem;
+}
+
+.hero-main h1 {
+  margin: 0.7rem 0;
+  font-size: clamp(1.9rem, 4.2vw, 3.2rem);
+  line-height: 1.12;
+}
+
+.hero-main p {
+  color: #445173;
+  max-width: 55ch;
+}
+
+.hero-side {
+  background: linear-gradient(155deg, #1d59ff, #0f3db3);
+  color: #fff;
+}
+
+.deal-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.hero-side a {
+  color: #f4f7ff;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 0.7rem;
+  margin-top: 1.2rem;
+}
+
+.btn {
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 0.68rem 1rem;
+}
+
+.btn.primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.btn.ghost {
+  border: 1px solid var(--line);
+  color: #243052;
+  background: #fff;
+}
+
+.offers-grid {
+  margin-top: 1.1rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 0.9rem;
+}
+
+.offer-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1rem;
+}
+
+.offer-card p {
+  margin: 0;
+  color: #50608b;
+  font-size: 0.9rem;
+}
+
+.offer-card h3 {
+  margin: 0.4rem 0 0;
+  font-size: 1.1rem;
+}
+
+.section-head {
+  margin-top: 2rem;
+}
+
+.section-head p {
+  color: var(--muted);
+}
+
+.product-grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(230px, 1fr));
+  gap: 1rem;
+  perspective: 1100px;
+}
+
+.product-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid rgba(38, 54, 94, 0.12);
+  transform-style: preserve-3d;
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 18px 36px rgba(14, 30, 72, 0.15);
+}
+
+.product-media {
+  height: 170px;
+}
+
+.media-1 { background: linear-gradient(135deg, #b7d0ff, #7ba7ff); }
+.media-2 { background: linear-gradient(135deg, #b9f6ff, #66cae7); }
+.media-3 { background: linear-gradient(135deg, #f4ceff, #d799ff); }
+.media-4 { background: linear-gradient(135deg, #d2d8ff, #9ea7ff); }
+.media-5 { background: linear-gradient(135deg, #c9ffe2, #7fdcb2); }
+.media-6 { background: linear-gradient(135deg, #ffe4bf, #ffbc8e); }
+
+.product-info {
+  padding: 0.95rem;
+}
+
+.product-info h3 {
+  margin: 0;
+}
+
+.product-info p {
+  color: var(--muted);
+  margin: 0.45rem 0 0.8rem;
+  font-size: 0.92rem;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.meta span {
+  font-weight: 800;
+}
+
+.meta button,
+.newsletter button {
+  background: #15213f;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.48rem 0.8rem;
+}
+
+.newsletter {
+  margin: 2.2rem auto;
+  background: #fff;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  padding: 1.2rem;
+}
+
+.newsletter form {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.newsletter input {
+  flex: 1;
+  min-width: 220px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0.58rem 0.7rem;
+}
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  background: #f0f4ff;
+}
+
+.footer-wrap {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-wrap a {
+  text-decoration: none;
+  color: #2347b6;
+}
+
+@media (max-width: 980px) {
+  .nav-row {
+    grid-template-columns: 1fr;
+    padding: 0.8rem 0;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .offers-grid,
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .strip-inner {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.4rem 0;
+  }
+
+  .nav-actions {
+    flex-wrap: wrap;
+  }
+
+  .offers-grid,
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
