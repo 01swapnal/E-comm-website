@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NovaCart | Modern E-Commerce Frontend</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <a class="brand" href="#">NovaCart</a>
+        <ul class="nav-links">
+          <li><a href="#featured">Featured</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#deals">Deals</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
+        </ul>
+        <button class="menu-btn" aria-label="Open mobile menu">☰</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container" id="home">
+        <div class="hero-copy">
+          <p class="kicker">Fresh drop · Spring collection</p>
+          <h1>Simple shopping with bold product experiences.</h1>
+          <p>
+            Built for your web dev project: responsive layout, clean visual hierarchy,
+            and rich 3D hover interactions that feel handcrafted.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#featured">Shop now</a>
+            <a class="btn ghost" href="#categories">Browse categories</a>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <article class="promo-card">
+            <p class="promo-badge">Up to 40% off</p>
+            <h2>Weekend deal</h2>
+            <p>Grab premium essentials before stock runs out.</p>
+            <a href="#deals">Explore offers →</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="container" id="categories">
+        <div class="section-head">
+          <h2>Shop by category</h2>
+          <p>Minimal, everyday picks curated for modern shoppers.</p>
+        </div>
+        <div class="chips">
+          <button>Apparel</button>
+          <button>Accessories</button>
+          <button>Home Tech</button>
+          <button>Wellness</button>
+          <button>Footwear</button>
+        </div>
+      </section>
+
+      <section class="container" id="featured">
+        <div class="section-head">
+          <h2>Featured products</h2>
+          <p>Hover on cards to see the 3D animation effect.</p>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card" data-card>
+            <div class="product-media gradient-1">
+              <span class="price-tag">$79</span>
+            </div>
+            <div class="product-info">
+              <h3>Urban Runner Sneakers</h3>
+              <p>Breathable knit upper with cloud-cushion sole.</p>
+              <button>Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-card>
+            <div class="product-media gradient-2">
+              <span class="price-tag">$49</span>
+            </div>
+            <div class="product-info">
+              <h3>Classic Leather Sling</h3>
+              <p>Structured silhouette with premium matte finish.</p>
+              <button>Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-card>
+            <div class="product-media gradient-3">
+              <span class="price-tag">$119</span>
+            </div>
+            <div class="product-info">
+              <h3>Smart Desk Lamp</h3>
+              <p>Adaptive lighting modes and touch controls.</p>
+              <button>Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-card>
+            <div class="product-media gradient-4">
+              <span class="price-tag">$29</span>
+            </div>
+            <div class="product-info">
+              <h3>Minimal Steel Bottle</h3>
+              <p>Insulated wall keeps drinks cold for 18 hours.</p>
+              <button>Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-card>
+            <div class="product-media gradient-5">
+              <span class="price-tag">$89</span>
+            </div>
+            <div class="product-info">
+              <h3>Noise-Lite Earbuds</h3>
+              <p>Balanced sound profile with low-latency mode.</p>
+              <button>Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-card>
+            <div class="product-media gradient-6">
+              <span class="price-tag">$64</span>
+            </div>
+            <div class="product-info">
+              <h3>Soft Lounge Hoodie</h3>
+              <p>Relaxed fit, brushed interior, all-day comfort.</p>
+              <button>Add to cart</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="container deals" id="deals">
+        <h2>Flash deals</h2>
+        <p>Limited slots open · Ends in 04:32:19</p>
+        <a href="#featured" class="btn primary">Claim deals</a>
+      </section>
+
+      <section class="container newsletter" id="newsletter">
+        <h2>Get member-only offers</h2>
+        <p>Subscribe for first access to drops and discounts.</p>
+        <form>
+          <label for="email" class="sr-only">Email address</label>
+          <input id="email" type="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© 2026 NovaCart. Made for your web dev project.</p>
+        <a href="#home">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
