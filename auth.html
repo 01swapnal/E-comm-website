@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ElexaCart | Login & Signup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="auth.css" />
+  </head>
+  <body>
+    <main class="auth-shell">
+      <a class="back-link" href="index.html">← Back to store</a>
+
+      <section class="auth-card" aria-label="Authentication forms">
+        <header class="auth-header">
+          <h1>Email OTP authentication</h1>
+          <p>Use signup to create an account, or login and verify your OTP.</p>
+        </header>
+
+        <div class="auth-tabs" role="tablist" aria-label="Auth mode selector">
+          <button class="tab active" id="signup-tab" data-target="signup" role="tab" aria-selected="true">Signup</button>
+          <button class="tab" id="login-tab" data-target="login" role="tab" aria-selected="false">Login</button>
+        </div>
+
+        <form id="signup-form" class="auth-form active" autocomplete="off">
+          <label>
+            Full name
+            <input type="text" id="signup-name" required placeholder="Alex Morgan" />
+          </label>
+          <label>
+            Email
+            <input type="email" id="signup-email" required placeholder="you@example.com" />
+          </label>
+          <label>
+            Password
+            <input type="password" id="signup-password" required minlength="6" placeholder="Min 6 characters" />
+          </label>
+          <div class="inline-actions">
+            <button type="button" class="btn primary" id="signup-send-otp">Send OTP</button>
+            <button type="submit" class="btn ghost" id="signup-verify" disabled>Verify & create account</button>
+          </div>
+          <label>
+            OTP code
+            <input type="text" id="signup-otp" maxlength="6" inputmode="numeric" placeholder="6 digit code" />
+          </label>
+        </form>
+
+        <form id="login-form" class="auth-form" autocomplete="off">
+          <label>
+            Email
+            <input type="email" id="login-email" required placeholder="you@example.com" />
+          </label>
+          <label>
+            Password
+            <input type="password" id="login-password" required placeholder="Your password" />
+          </label>
+          <div class="inline-actions">
+            <button type="button" class="btn primary" id="login-send-otp">Send OTP</button>
+            <button type="submit" class="btn ghost" id="login-verify" disabled>Verify & login</button>
+          </div>
+          <label>
+            OTP code
+            <input type="text" id="login-otp" maxlength="6" inputmode="numeric" placeholder="6 digit code" />
+          </label>
+        </form>
+
+        <p id="auth-message" class="auth-message" role="status" aria-live="polite"></p>
+        <p class="auth-note">
+          Demo note: OTP is generated in-browser and shown in the success message. Connect an email
+          provider API on the backend for production use.
+        </p>
+      </section>
+    </main>
+
+    <script src="auth.js"></script>
+  </body>
+</html>
